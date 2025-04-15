@@ -2,14 +2,7 @@
 
 A robust system designed to authenticate individuals and record attendance using **facial recognition technology** powered by deep learning. This project simplifies attendance tracking for classrooms, workplaces, or events.
 
----
-## **Get the Enhanced Version**
 
-I’ve improved this project by adding new features and enhancements.  
-If you want access to the updated version along with my support to set it up, it's available for **$25**.  
-📧 Contact me at: **rajeynj@gmail.com**
-
----
 
 ## **📋 Features**
 
@@ -58,7 +51,7 @@ Follow these steps to set up and run the project:
 
 - Clone the repository using Git:
   ```bash
-  git clone https://github.com/francis-njenga/Face-Recognition-Attendance-System.git
+  git clone https://github.com/BahzAbbasRawnah/Face-Recognition.git
   ```
   -Download zip file
 
@@ -67,7 +60,8 @@ Follow these steps to set up and run the project:
 If you’re using XAMPP, place the project folder inside the `htdocs` directory:
 
 ```plaintext
-xampp/htdocs/Face-Recognition-Attendance-System
+xampp/htdocs/Face-Recognition
+
 ```
 
 Use a simple folder name, as it will be part of the URL (e.g., attendance-system).
@@ -134,14 +128,4 @@ As a lecturer:
 - You can also export the attendance to an **Excel** sheet.
 - Other simple features are available for managing the lecture panel.
 
-📜 License
-This project is licensed under the MIT License.
 
-📧 Support
-For any issues or inquiries, feel free to reach out via email: [Francis Njenga](mailto:rajeynj@gmail.com).
-
-### Visit My Website
-
-https://www.frankcodes.tech
-
-You can send donations to my PayPal account: rajeynjenga@gmail.com
