@@ -115,8 +115,8 @@ Once logged in, you can:
 
   *if you have issues using this email and password, create your lecture on admin panel*
 
-- **Email**: `mark@gmail.com`
-- **Password**: `@mark_`
+- **Email**: `lecture@gmail.com`
+- **Password**: `123456789`
 
 As a lecturer:
 

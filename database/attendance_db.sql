@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2025 at 05:23 PM
+-- Generation Time: Apr 16, 2025 at 01:44 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `attendance-db`
+-- Database: `attendance_db`
 --
 
 -- --------------------------------------------------------
@@ -57,6 +57,18 @@ CREATE TABLE `tblattendance` (
   `unit` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `tblattendance`
+--
+
+INSERT INTO `tblattendance` (`attendanceID`, `studentRegistrationNumber`, `course`, `attendanceStatus`, `dateMarked`, `unit`) VALUES
+(511, '123456789', 'BCT', 'Absent', '2025-04-15', 'BCT 2411'),
+(512, '0987654321', 'BCT', 'Absent', '2025-04-15', 'BCT 2411'),
+(513, '123456789', 'BCT', 'present', '2025-04-15', 'BCT 2411'),
+(514, '0987654321', 'BCT', 'Absent', '2025-04-15', 'BCT 2411'),
+(515, '123456789', 'BCT', 'present', '2025-04-15', 'BCT 2411'),
+(516, '0987654321', 'BCT', 'Absent', '2025-04-15', 'BCT 2411');
+
 -- --------------------------------------------------------
 
 --
@@ -76,7 +88,7 @@ CREATE TABLE `tblcourse` (
 --
 
 INSERT INTO `tblcourse` (`Id`, `name`, `facultyID`, `dateCreated`, `courseCode`) VALUES
-(10, 'Computer Technology', 8, '2025-04-07', 'BCT');
+(10, 'Computer Technology', 8, '2024-04-07', 'BCT');
 
 -- --------------------------------------------------------
 
@@ -96,7 +108,7 @@ CREATE TABLE `tblfaculty` (
 --
 
 INSERT INTO `tblfaculty` (`Id`, `facultyName`, `facultyCode`, `dateRegistered`) VALUES
-(8, 'Computing and Information Technology', 'CIT', '2025-04-07');
+(8, 'Computing and Information Technology', 'CIT', '2024-04-07');
 
 -- --------------------------------------------------------
 
@@ -120,7 +132,7 @@ CREATE TABLE `tbllecture` (
 --
 
 INSERT INTO `tbllecture` (`Id`, `firstName`, `lastName`, `emailAddress`, `password`, `phoneNo`, `facultyCode`, `dateCreated`) VALUES
-(15, 'lecture', 'lecture', 'lecture@gmail.com', '$2y$10$/st06w2mh/4adxGE9yCxROHkqHp6SzRARGhfCIg95zC3cxqbmkpaW', '07123456789', 'CIT', '2025-04-07');
+(26, 'lecture', 'lecture', 'lecture@gmail.com', '$2y$10$vRR9ppaWBq3RJcTpFwMstuH5Xn5CubCem3FhhKTNEpg3f4ZKb8gsO', '123456789', 'CIT', '2025-04-16');
 
 -- --------------------------------------------------------
 
@@ -139,6 +151,13 @@ CREATE TABLE `tblstudents` (
   `studentImage` varchar(300) NOT NULL,
   `dateRegistered` varchar(50) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `tblstudents`
+--
+
+INSERT INTO `tblstudents` (`Id`, `firstName`, `lastName`, `registrationNumber`, `email`, `faculty`, `courseCode`, `studentImage`, `dateRegistered`) VALUES
+(129, 'Bahz', 'Abbas', '123456789', 'bahzabbasismaeel@gmail.com', 'CIT', 'BCT', '[\"123456789_image1.png\",\"123456789_image2.png\",\"123456789_image3.png\",\"123456789_image4.png\",\"123456789_image5.png\"]', '2025-04-15');
 
 -- --------------------------------------------------------
 
@@ -159,7 +178,7 @@ CREATE TABLE `tblunit` (
 --
 
 INSERT INTO `tblunit` (`Id`, `name`, `unitCode`, `courseID`, `dateCreated`) VALUES
-(3, 'Project Implementation', 'BCT 2411', '8', '2025-04-07');
+(3, 'Project Implementation', 'BCT 2411', '8', '2024-04-07');
 
 -- --------------------------------------------------------
 
@@ -182,7 +201,7 @@ CREATE TABLE `tblvenue` (
 --
 
 INSERT INTO `tblvenue` (`Id`, `className`, `facultyCode`, `currentStatus`, `capacity`, `classification`, `dateCreated`) VALUES
-(15, 'b34', 'CIT', 'availlable', 45, 'laboratory', '2025-11-26');
+(15, 'b34', 'CIT', 'availlable', 45, 'laboratory', '2024-11-26');
 
 --
 -- Indexes for dumped tables
@@ -250,7 +269,7 @@ ALTER TABLE `tbladmin`
 -- AUTO_INCREMENT for table `tblattendance`
 --
 ALTER TABLE `tblattendance`
-  MODIFY `attendanceID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=511;
+  MODIFY `attendanceID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=517;
 
 --
 -- AUTO_INCREMENT for table `tblcourse`
@@ -268,13 +287,13 @@ ALTER TABLE `tblfaculty`
 -- AUTO_INCREMENT for table `tbllecture`
 --
 ALTER TABLE `tbllecture`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `tblstudents`
 --
 ALTER TABLE `tblstudents`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
 
 --
 -- AUTO_INCREMENT for table `tblunit`
