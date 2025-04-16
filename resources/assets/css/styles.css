@@ -435,12 +435,27 @@ padding-bottom:5px;
 
 /* table-container */
 .attendance-button{
+    margin: 5px;
     display:flex;
-    justify-content:space-evenly;
+    flex-direction: row;
+
+    
+}
+.attendance-button button{
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5073fb;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+
+    
     
 }
 .table-container {
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .table {

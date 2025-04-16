@@ -10,11 +10,14 @@
         </div>
         <div class="notification--profile">
             <div class="picon lock">
-                @ <?php echo $logged_in->name ?>
+                <?php echo $logged_in->name ?>
             </div>
             <div class="picon profile">
-                <img src="resources/images/user.png" alt="">
-            </div>
+    <a href="resources/pages/administrator/admin_profile.php">
+        <img src="resources/images/user.png" alt="Profile" style="cursor:pointer;">
+    </a>
+</div>
+
         </div>
     </div>
 </section>

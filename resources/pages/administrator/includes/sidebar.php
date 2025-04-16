@@ -15,13 +15,13 @@
                 <li>
                     <a href="create-venue">
                         <span class="icon icon-1"><i class="ri-map-pin-line"></i></span>
-                        <span class="sidebar--item" style="white-space: nowrap;">Create Venue</span>
+                        <span class="sidebar--item" style="white-space: nowrap;">Manage Venue</span>
                     </a>
                 </li>
                 <li>
                     <a href="manage-lecture">
                         <span class="icon icon-1"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item">manage lectures</span>
+                        <span class="sidebar--item">Manage lectures</span>
                     </a>
                 </li>
                 <li>

@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
             <div class="video-container" style="display:none;">
-                <video id="video" width="600" height="450" autoplay></video>
+                <video id="video" width="400" height="300" autoplay></video>
                 <canvas id="overlay"></canvas>
             </div>
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 16, 2025 at 01:44 PM
+-- Generation Time: Apr 16, 2025 at 09:32 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,7 +40,7 @@ CREATE TABLE `tbladmin` (
 --
 
 INSERT INTO `tbladmin` (`Id`, `firstName`, `lastName`, `emailAddress`, `password`) VALUES
-(1, 'Admin', '', 'admin@gmail.com', '$2y$10$FIBqWvTOXRMoQOAB2FBz3uUbaCwRYTM1zQreFI6i/7v6Qi8y9R1i6');
+(1, 'Admin', 'test', 'admin@gmail.com', '$2y$10$oBm1pF.78DkH9ImKf7/UBeHh6BMlvFmWS4hdCkuMjDYa4NRYKbTI2');
 
 -- --------------------------------------------------------
 
@@ -67,7 +67,11 @@ INSERT INTO `tblattendance` (`attendanceID`, `studentRegistrationNumber`, `cours
 (513, '123456789', 'BCT', 'present', '2025-04-15', 'BCT 2411'),
 (514, '0987654321', 'BCT', 'Absent', '2025-04-15', 'BCT 2411'),
 (515, '123456789', 'BCT', 'present', '2025-04-15', 'BCT 2411'),
-(516, '0987654321', 'BCT', 'Absent', '2025-04-15', 'BCT 2411');
+(516, '0987654321', 'BCT', 'Absent', '2025-04-15', 'BCT 2411'),
+(517, '123456789', 'BCT', 'present', '2025-04-16', 'BCT 2411'),
+(518, '123456789', 'BCT', 'present', '2025-04-16', 'BCT 2411'),
+(519, '123456789', 'BCT', 'present', '2025-04-16', 'BCT 2411'),
+(520, '123456789', 'BCT', 'present', '2025-04-16', 'BCT 2411');
 
 -- --------------------------------------------------------
 
@@ -108,7 +112,8 @@ CREATE TABLE `tblfaculty` (
 --
 
 INSERT INTO `tblfaculty` (`Id`, `facultyName`, `facultyCode`, `dateRegistered`) VALUES
-(8, 'Computing and Information Technology', 'CIT', '2024-04-07');
+(8, 'Computing and Information Technology', 'CIT', '2024-04-07'),
+(16, 'Enginering', 'EN123', '2025-04-16');
 
 -- --------------------------------------------------------
 
@@ -269,7 +274,7 @@ ALTER TABLE `tbladmin`
 -- AUTO_INCREMENT for table `tblattendance`
 --
 ALTER TABLE `tblattendance`
-  MODIFY `attendanceID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=517;
+  MODIFY `attendanceID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=521;
 
 --
 -- AUTO_INCREMENT for table `tblcourse`
@@ -281,13 +286,13 @@ ALTER TABLE `tblcourse`
 -- AUTO_INCREMENT for table `tblfaculty`
 --
 ALTER TABLE `tblfaculty`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `tbllecture`
 --
 ALTER TABLE `tbllecture`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `tblstudents`

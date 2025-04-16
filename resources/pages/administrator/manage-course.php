@@ -111,13 +111,7 @@ if (isset($_POST["addFaculty"])) {
             <div class="overview">
                 <div class="title">
                     <h2 class="section--title">Overview</h2>
-                    <select name="date" id="date" class="dropdown">
-                        <option value="today">Today</option>
-                        <option value="lastweek">Last Week</option>
-                        <option value="lastmonth">Last Month</option>
-                        <option value="lastyear">Last Year</option>
-                        <option value="alltime">All Time</option>
-                    </select>
+            
                 </div>
                 <div class="cards">
                     <div id="addCourse" class="card card-1">
@@ -280,6 +274,8 @@ if (isset($_POST["addFaculty"])) {
                                 <th>Total Students</th>
                                 <th>Total Lectures</th>
                                 <th>Date Created</th>
+                                <th>Action</th>
+
                             </tr>
                         </thead>
                         <tbody>
